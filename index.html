@@ -1,67 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>BaW — The Agent OS Lab | ZXY Ventures</title>
-<meta name="description" content="BaW es el laboratorio real donde ZXY prueba los límites de Agent OS: un equipo de agentes de IA operando un modelo completo de Hybrid Property Management." />
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BaW — Hybrid Property Management Lab | ZXY Ventures</title>
+  <meta name="description" content="El primer laboratorio de Agentic Property Management en México. Operación real, revenue real, equipo de agentes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Raleway:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .pitch-stat { text-align: center; padding: 32px 24px; }
+    .pitch-stat .num { font-family: var(--font-h); font-size: 56px; font-weight: 600; color: #fff; line-height: 1; }
+    .pitch-stat .label { font-size: 13px; color: var(--muted); margin-top: 8px; text-transform: uppercase; letter-spacing: 1px; }
+    .pitch-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin: 48px 0; }
+    .pitch-grid .pitch-stat { background: var(--bg2); }
+    .narrative { max-width: 720px; }
+    .narrative h2 { font-family: var(--font-h); font-size: 36px; margin-bottom: 20px; }
+    .narrative p { color: var(--accent2); line-height: 1.8; margin-bottom: 16px; font-size: 16px; }
+    .section-tag { font-size: 11px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; color: var(--muted); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+    .section-tag::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+    .vision-box { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 48px; margin: 48px 0; }
+    .vision-box blockquote { font-family: var(--font-h); font-size: 28px; line-height: 1.4; color: #fff; border: none; padding: 0; margin: 0; }
+    .cta-minimal { text-align: center; padding: 80px 0; }
+    .cta-minimal h2 { font-family: var(--font-h); font-size: 48px; margin-bottom: 16px; }
+    .cta-minimal p { color: var(--muted); margin-bottom: 32px; }
+    @media (max-width: 640px) { .pitch-grid { grid-template-columns: 1fr; } .pitch-stat .num { font-size: 40px; } }
+  </style>
 </head>
 <body>
-<nav><div class="container inner">
-  <a href="https://zxy.vc" style="font-size:12px;color:var(--muted);font-family:var(--font-b);letter-spacing:0.5px;display:inline-flex;align-items:center;gap:4px;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">← zxy.vc</a>
-  <span class="brand">ZXY <span>Ventures</span></span>
-  <a href="https://baw.mx" target="_blank" rel="noopener" class="btn-primary" style="padding:8px 20px;font-size:.85rem;">Ver baw.mx →</a>
-</div></nav>
 
-<section class="hero"><div class="container">
-  <span class="badge-live">Agent OS Lab · PropTech</span>
-  <h1>En Silicon Valley pusieron<br>un agente a operar una vending machine.<br><span class="accent">Nosotros pusimos un equipo completo<br>a operar Hybrid Property Management.</span></h1>
-  <p>BaW no es solo un negocio de rentas. Es el experimento más ambicioso de Agent OS — un modelo completo de propiedad híbrida operado por un equipo de agentes de inteligencia artificial en condiciones reales.</p>
-  <a href="https://baw.mx" target="_blank" rel="noopener" class="btn-primary">Ver la operación en baw.mx</a>
-</div></section>
+  <!-- NAV -->
+  <nav>
+    <div class="container inner">
+      <div style="display:flex;align-items:center;gap:20px;">
+        <a href="https://zxy.vc" style="font-size:12px;color:var(--muted);font-family:var(--font-b);display:inline-flex;align-items:center;gap:4px;opacity:0.7;transition:opacity 0.2s;" onmouseover="this.style.opacity='1'" onmouseout="this.style.opacity='0.7'">← zxy.vc</a>
+        <span class="brand">BaW <span>Ventures</span></span>
+      </div>
+      <a href="mailto:hey@baw.mx" class="btn-secondary" style="padding:8px 20px;font-size:.85rem;">hey@baw.mx</a>
+    </div>
+  </nav>
 
-<section><div class="container">
-  <span class="badge-live">¿Qué es BaW?</span>
-  <h2>Hybrid Property Management operado por agentes</h2>
-  <div class="grid3">
-    <div class="venture-card"><h3>Operación real</h3><p>No es un demo ni un piloto. BaW gestiona propiedades reales con huéspedes reales, reservaciones reales y revenue real — desde el día uno con Agent OS.</p></div>
-    <div class="venture-card"><h3>Modelo híbrido</h3><p>Combina renta corta (STR) y larga (LTR) en el mismo portfolio. El agente optimiza la mezcla según temporada, demanda y rentabilidad en tiempo real.</p></div>
-    <div class="venture-card"><h3>Human-AI coordination</h3><p>AliOps coordina con Enrique (conserje) y proveedores humanos. BaW es el laboratorio donde aprendemos los límites reales de la colaboración humano-agente.</p></div>
-  </div>
-</div></section>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="hero-eyebrow fade-in">Agentic Property Management · México · LatAm</div>
+        <h1 class="hero-headline fade-in fade-in-delay-1">
+          Si en Silicon Valley pusieron<br>un agente a operar una vending machine,<br>
+          <span class="line2">nosotros pusimos un equipo completo.</span>
+        </h1>
+        <p class="hero-sub fade-in fade-in-delay-2">
+          BaW es el primer laboratorio de Hybrid Property Management operado por Agent OS.<br>
+          Revenue real. Propiedades reales. Equipo de agentes trabajando 24/7.
+        </p>
+        <div class="hero-ctas fade-in fade-in-delay-3">
+          <a href="https://baw.mx" class="btn-primary" target="_blank" rel="noopener">Ver operación comercial →</a>
+          <a href="mailto:hey@baw.mx" class="btn-secondary">Contactar</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section><div class="container">
-  <span class="badge-live">Experimentos Activos</span>
-  <h2>Lo que estamos aprobando en producción</h2>
-  <div class="grid3">
-    <div class="venture-card"><h3>AliOps — Agente Operativo</h3><p>El 7° agente de Agent OS, especializado en BaW. Opera 24/7: responde huéspedes, coordina mantenimiento, gestiona inventario y escala problemas en tiempo real.</p></div>
-    <div class="venture-card"><h3>Integración PMS</h3><p>Conectando Agent OS con Lodgify/Guesty para automatizar reservaciones, precios dinámicos y reportes. El objetivo: cero intervención manual en operaciones estándar.</p></div>
-    <div class="venture-card"><h3>CCTV con AI Intelligence</h3><p>Computer vision aplicada a la seguridad y operación de propiedades. Detección de incidencias, control de acceso y reportes automáticos — sin vigilancia invasiva.</p></div>
-    <div class="venture-card"><h3>Coordinación humano-agente</h3><p>Protocolo de escalación entre AliOps y equipo humano. Definiendo en qué momentos el agente decide solo y cuándo necesita validación humana.</p></div>
-    <div class="venture-card"><h3>PMS Híbrido propio</h3><p>Si los PMS existentes no cubren el modelo híbrido STR+LTR que necesitamos, ZXY construye el suyo. BaW es el caso de uso que lo define.</p></div>
-    <div class="venture-card"><h3>Revenue optimization</h3><p>Algoritmo de pricing dinámico que ajusta tarifas por temporada, ocupación del mercado y perfil de huésped. El agente aprende de cada ciclo de reservación.</p></div>
-  </div>
-</div></section>
+  <!-- OPORTUNIDAD -->
+  <section class="section">
+    <div class="container">
+      <div class="section-tag">La oportunidad</div>
+      <div class="narrative">
+        <h2>El mercado de renta corta en México<br>está roto. Y eso es una oportunidad.</h2>
+        <p>El mercado de short-term rental en México mueve más de $3B USD anuales. El 80% de los operadores son propietarios individuales sin sistemas, sin automatización y con márgenes que se erosionan año con año.</p>
+        <p>La gestión profesional (property management) apenas penetra el 15% del mercado en México vs 45% en mercados maduros como España o EE.UU. La brecha es enorme y nadie la ha atacado con IA.</p>
+      </div>
+      <div class="pitch-grid fade-in">
+        <div class="pitch-stat">
+          <div class="num">$3B+</div>
+          <div class="label">USD mercado STR México</div>
+        </div>
+        <div class="pitch-stat">
+          <div class="num">80%</div>
+          <div class="label">Operadores sin sistemas</div>
+        </div>
+        <div class="pitch-stat">
+          <div class="num">15%</div>
+          <div class="label">Penetración de gestión profesional</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section><div class="container">
-  <span class="badge-live">Por qué importa</span>
-  <h2>El lab que hace posibles los demás ventures</h2>
-  <div class="grid3">
-    <div class="venture-card"><h3>Aprendizaje en tiempo real</h3><p>Cada problema operativo de BaW se convierte en un insight que mejora Agent OS. Lo que funciona aquí escala a todos los ventures de ZXY.</p></div>
-    <div class="venture-card"><h3>Prueba del modelo ANVB</h3><p>BaW demuestra que un venture puede nacer agentic desde el primer día y operar con menor fricción y costo que un modelo humano convencional.</p></div>
-    <div class="venture-card"><h3>Cashflow que financia la visión</h3><p>BaW genera revenue real que financia el desarrollo de los demás ventures. No es solo un lab — es el motor que hace posible ZXY.</p></div>
-  </div>
-</div></section>
+  <!-- PROBLEMA -->
+  <section class="section" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-tag">El problema</div>
+      <div class="narrative">
+        <h2>Operar una propiedad en renta corta<br>es un trabajo de tiempo completo.</h2>
+        <p>Comunicación con huéspedes a cualquier hora. Coordinación de limpieza y mantenimiento. Optimización de precios dinámicos. Gestión de múltiples plataformas (Airbnb, Booking, VRBO). Facturación y contabilidad.</p>
+        <p>Un propietario típico dedica 20-30 horas al mes por propiedad. Escalar a múltiples propiedades es humanamente imposible sin un equipo. Y contratar ese equipo destruye el margen.</p>
+        <p><strong>El resultado:</strong> el mercado está estancado en operadores de 1-3 propiedades que no pueden escalar. El upside del mercado está atrapado.</p>
+      </div>
+    </div>
+  </section>
 
-<section><div class="container"><div class="cta-section">
-  <h2>¿Tienes propiedades y quieres ver el modelo en acción?</h2>
-  <p>BaW opera en México. Si tienes propiedades y te interesa el modelo híbrido con Agent OS, hablemos.</p>
-  <a href="https://baw.mx" target="_blank" rel="noopener" class="btn-primary">Conocer BaW →</a>
-</div></div></section>
+  <!-- SOLUCIÓN -->
+  <section class="section">
+    <div class="container">
+      <div class="section-tag">La solución</div>
+      <div class="narrative">
+        <h2>Agent OS como equipo fundador<br>de una property management company.</h2>
+        <p>BaW no usa software de property management. BaW <em>es</em> un sistema de agentes que opera propiedades: comunica, coordina, optimiza, factura y reporta — de forma autónoma y continua.</p>
+        <p>Alicia (COO de BaW) coordina operaciones. Beto gestiona finanzas. Andrés mantiene las integraciones tecnológicas. Hugo coordina el equipo. Todo automatizado, todo trazable, todo documentado.</p>
+        <p>El modelo no requiere escalar headcount. Escala con propiedades.</p>
+      </div>
+    </div>
+  </section>
 
-<footer class="container">
-  <p>ZXY Ventures · <a href="https://zxy.vc">zxy.vc</a> · México · LatAm</p>
-  <p style="margin-top:6px;font-style:italic">"La diferencia entre usar IA y ser IA."</p>
-</footer>
-</body></html>
+  <!-- TRACCIÓN -->
+  <section class="section" style="background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-tag">Tracción</div>
+      <div class="narrative">
+        <h2>Operación real.<br>Revenue real.</h2>
+        <p>BaW opera hoy con propiedades activas generando revenue. El sistema Agent OS gestiona la operación completa: comunicación con huéspedes, coordinación logística, reportes financieros y optimización de ocupación.</p>
+        <p>Estamos en proceso de migración a Guesty como PMS central — el siguiente paso para escalar el modelo a más propiedades y eventualmente a terceros.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIÓN -->
+  <section class="section">
+    <div class="container">
+      <div class="section-tag">Visión</div>
+      <div class="vision-box fade-in">
+        <blockquote>"En 3 años, BaW es la plataforma de Agentic Property Management líder en LatAm — operando propiedades de terceros en México, Colombia y Chile con el mismo equipo de agentes."</blockquote>
+      </div>
+      <div class="narrative">
+        <p>El modelo es replicable en cualquier mercado de habla hispana. El playbook está documentado. El sistema está construido. Lo que falta es capital para escalar la adquisición de propiedades bajo gestión.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-minimal fade-in">
+        <h2>¿Eres inversionista o propietario?</h2>
+        <p>Escríbenos. Mostramos números reales, no decks.</p>
+        <a href="mailto:hey@baw.mx" class="btn-primary" style="font-size:1.1rem;padding:16px 40px;">hey@baw.mx</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="container">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="footer-logo">ZXY</div>
+        <div class="footer-tagline">"La diferencia entre usar IA y ser IA."</div>
+      </div>
+      <div class="footer-links">
+        <a href="https://zxy.vc">ZXY Ventures</a>
+        <a href="mailto:hey@baw.mx">hey@baw.mx</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>ZXY Ventures · zxy.vc · México · LatAm</span>
+    </div>
+  </footer>
+
+  <script>
+    const fadeEls = document.querySelectorAll('.fade-in');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    fadeEls.forEach(el => io.observe(el));
+  </script>
+</body>
+</html>
